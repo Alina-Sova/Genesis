@@ -1,0 +1,36 @@
+@media(max-width: 1024px) {
+
+    main {
+        .form-search{
+            .search-item {
+                &:last-child {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .wrapper-select {
+                margin: 0 40px 40px 0;
+            }
+        }
+
+        .list-result {
+            .res-item {
+                width: 32%;
+            }
+        }
+    }
+
+
+    footer{
+        .menu-bottom {
+            @include forStretch;
+            .menu-item {
+                float: none;
+                margin: 0;
+                display: inline-block; 
+            }
+        }
+
+    }
+}

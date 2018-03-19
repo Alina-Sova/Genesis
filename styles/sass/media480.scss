@@ -1,0 +1,271 @@
+// @import '../helpers/mixins';
+
+@media(max-width: 767px) {
+
+    .min-menu-wrapper {
+        padding: 20px;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        background-color: rgba(256,256,256,.9);
+        opacity: 1;
+        transition: 1s;
+        
+        .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: bold;
+            &:hover {
+                color: #000;
+            }
+
+        }
+
+        .user-menu-mobile {
+            margin-bottom: 20px;
+            .profile-photo {
+                display: block;
+                background: url(../../images/profile.png) 0 0 no-repeat;
+                background-size: contain;
+                // margin-top: -7px;
+                border-radius: 50%;
+                height: 46px;
+                width: 46px;
+            }
+
+            .user-info {
+                margin-top: -1px;
+                .info-item {
+                    line-height: 25px;
+                    .blue {
+                        color: $blue;
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .mobile-menu {
+            .menu-item {
+                border-bottom: 1px solid gainsboro;
+                a {
+                    display: block;
+                    width: 100%;
+                    &:hover {
+                        background-color: rgba(240, 240, 240, .8);
+                        // color: #fff;
+                    }
+                }
+                // cursor: pointer;
+            }
+
+        }
+
+    }
+    
+    .menu-collapsed {
+        width: 0;
+        padding: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .logo-wrapper {
+        text-align: center;
+        background: rgba(256,256,256,.8);
+        box-shadow: -1px 2px 1px rgba(0,0,0,0.05);
+        z-index: 99999;
+        position: fixed;
+        left: 0;
+
+        .min-menu {
+            cursor: pointer;
+            position: absolute;
+            top:50%;
+            margin-top: -13px;
+            display: block;
+            float: left;
+            width: 28px;
+            height: 26px;
+            background: url(../../images/menu-icon.png) 0 0 no-repeat;
+            background-size: cover;
+        }
+
+        a {
+            padding: 0;
+            float: right;
+            margin-right: 15px;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-left: 0;
+        }
+
+        .min-profile {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -18px;
+            display: none;
+            width: 35px;
+            height: 35px;
+            background: url(../../images/profile.png) 0 0 no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .menu-system {
+        display: none;
+    }
+
+    .menu-user {
+        display: none;
+    }
+
+    .section-gray {
+        .top-girls {
+            margin-top: 45px;
+
+            .all-girls {
+                max-height: 123px;
+                overflow: hidden;
+                .girl-top {
+                    .babe {
+                        width: 98px;
+                        height: 98px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    main {
+        padding-top: 10px; 
+        .form-search {
+            padding: 0;
+
+            .wrapper-city{
+                .cityresult {
+                    top: 27px;
+                    width: 100%;
+                    max-width: 270px;
+                }
+            }
+
+            .search-item {
+                width: 100%;
+                text-align: center;
+                .wrapper {
+                    &-select, &-city, &-range {
+                        width: 100%;
+                        max-width: 270px;
+                        margin: 20px auto;
+                    }
+                }
+                #select-display, .dropdown-select, .select-item {
+                    width: 100%;
+                }
+
+                .wrapper-range {
+
+                    .range-span {
+                        display: inline-block;
+                    }
+                    
+                    #range {
+                        margin-left: 10px;
+                        display: inline-block;
+                        width: 70%; 
+                    }
+                }
+
+                .button-search {
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+        .menu-switcher {
+            max-width: 500px;
+            margin: 0 auto;
+            .menu-item {
+                width: 33.3%;
+                a {
+                    font-size: 14px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .list-result {
+            max-height: 390px;
+            overflow-y: hidden;
+            .res-item {
+                width: 49%;
+                max-width: 270px;
+                .result {
+
+                    .like-menu {
+                        .menu-item {
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .photo {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        #scroll-top {
+            display: none;
+        }
+
+    }
+
+
+    footer {
+        padding-bottom: 0;
+        .menu-bottom {
+            .menu-item {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .copyright {
+            p {
+                font-size: 11px;
+                text-align: center;
+            }
+
+        }
+        
+        .responsibility {
+            display: none;
+        }
+    }
+
+}

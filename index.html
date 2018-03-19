@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/dist/main.min.css" media="screen">
+    <script src="js/dist/script.js" async></script>
+    <title>Genesis</title>
+</head>
+<body>
+    <header>
+        <div class="min-menu-wrapper container menu-collapsed">
+            <ul class="mobile-menu">
+                <li class="menu-item"><a href="#find-her">Поиск</a></li>
+                <li class="menu-item"><a href="#">Мои переписки</a></li>
+                <li class="menu-item"><a href="#">Избранное</a></li>
+                <li class="menu-item"><a href="#">Кто смотрел</a></li>
+            </ul>
+        </div>
+        <div class="container right-edge">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-12 logo-wrapper">
+                    <div class="min-menu"></div>
+                    <a href="#"><div class="logo"></div></a>
+                </div>
+                <nav class="col-lg-6" id="top-menu">
+                    <ul class="menu-system">
+                        <li class="menu-item"><a href="#find-her" class = "this-page">Поиск</a></li>
+                        <li class="menu-item"><a href="#">Мои переписки</a></li>
+                        <li class="menu-item"><a href="#">Избранное</a></li>
+                        <li class="menu-item"><a href="#">Кто смотрел</a></li>
+                    </ul>
+                </nav> 
+                <div class="col-lg-4 col-md-6 user-wrapper">
+                    <ul class="menu-user">
+                        <li class="menu-item"><a href="#" class="blue"><span class="arrow-down"></span></a></li> 
+                        <li class="menu-item">
+                            <a href="#">
+                                <div id="profile">
+
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-item"><a href="#" class="blue">100 кредитов</a></li>
+                        <li class="menu-item"><a href="#">Премиум  <span class = "info-ico" class="blue"></span></a></li> 
+                    </ul>    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-gray"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 top-girls">
+                    <ul class="all-girls">
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl1.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl2.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl3.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl4.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl5.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl6.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl7.jpg">
+                            </figure>
+                        </li>
+                        <li class="girl-top">
+                            <figure class="babe">
+                                <img src="images/girl8.jpg">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+        <section id="find-her">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Я ищу</h1>
+                    </div>
+                </div>
+                    <form action="#" class="row">
+                        <div class="col-lg-12">
+                            <ul class="form-search">
+                                <li class="search-item">
+                                        <select name="gender" id="gender">
+                                            <option value="Девушка">Девушку</option>
+                                            <option value="Парень">Парня</option>
+                                        </select>  
+                                        <div class="wrapper-select">
+                                            <span id="select-display">Девушку</span>
+                                            <ul class="dropdown-select collapsed">
+                                                <li id="female" class="select-item">Девушку</li>
+                                                <li id="male" class="select-item">Парня</li>
+                                            </ul>
+                                        </div>
+                                </li>
+                                <li class="search-item">
+                                        <div class="wrapper-city">
+                                            <input type="text" id="from" autocomplete="on">
+                                            <span class="clear">x</span>
+                                            <ul class="cityresult">
+                                                
+                                            </ul>
+                                        </div>
+                                </li>
+                                <li class="search-item">
+                                        <input type="range" id="year-min">
+                                        <input type="range" id="year-max">
+                                        <div class="wrapper-range">
+                                            <span class="range-span">Возраст</span>
+                                            <div class="range" id="range">
+                                                <div class="range-selected">
+                                                    <div class="thumb" id="thumb-min"><span class="years"></span></div>
+                                                    <div class="thumb" id="thumb-max"><span class="years"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="search-item">
+                                        <button type="submit" class="button-search">Найти</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+            </div>
+            <div class="more-wrapper">
+                <div class="block-addon"> <span>Чтобы обновить результаты поиска, нажмите "Новые"</span> </div>
+                <div class="line"></div>
+                <span class="more-search">Расширенный поиск <span class="arrow-down"></span></span>
+            </div>
+        </section>
+        <section class="section-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-12">
+                        <ul class="menu-switcher">
+                            <li class="menu-item"><a href="#">Онлайн</a></li>
+                            <li class="menu-item"><a href="#">Новые</a></li>
+                            <li class="menu-item"><a href="#">Популярные</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="col-lg-12 list-result">
+                    </ul>
+                    <div id="scroll-top">
+                        <div class="totop"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <nav class="col-lg-12">
+                        <div class="pagination">
+                            <ul class="pag-nav">
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <nav class="col-lg-12">
+                    <ul class="menu-bottom">
+                        <li class="menu-item"><a href="#">Правила</a></li>
+                        <li class="menu-item"><a href="#">Пользовательское соглашение</a></li>
+                        <li class="menu-item"><a href="#">О проекте</a></li>
+                        <li class="menu-item"><a href="#">Обратная связь</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 copyright">
+                    <p>&copy; &laquo;KIKI&raquo;. Лучший on-line сервис по поиску спонсоров и содержанок, 2015-2017</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 responsibility">
+                    <p>Администрация не несёт ответственности за размещенные анкеты. Вся информация на сайте предоставлена посетителями.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

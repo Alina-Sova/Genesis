@@ -1,0 +1,82 @@
+$gray: #f0f0f0;
+$color-text: #333;
+$blue: #376cf8;
+$standartFont: 500 16px/30px Roboto, sans-serif;
+$width-input-city: 270px;
+
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        } 
+    40% {
+        transform: translateY(-6px);
+        } 
+    60% {
+        transform: translateY(-3px);
+        } 
+} 
+
+@keyframes bouncenew { 
+    0%, 20%, 50%, 80%, 100% {
+        // transform: rotateX(180deg);
+        transform: translateY(0);
+        } 
+    40% {
+        transform: translateY(6px);
+        // transform: rotateX(180deg);
+        } 
+    60% {
+        transform: translateY(3px);
+        // transform: rotateX(180deg);
+        } 
+} 
+
+////SPRITE GEN
+.totop, .camera, .mail, .star-fullwhite, .star-white, 
+.info-ico, .arrow-down
+{ display: inline-block; background: url('../../images/icons/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.totop { background-position: -0px -0px; width: 50px; height: 50px; margin-bottom: -2px;}
+.camera { background-position: -0px -50px; width: 21px; height: 17px; margin-bottom: -2px;}
+.mail { background-position: -21px -50px; width: 20px; height: 15px; margin: 0 5px -2px 0; }
+.star-fullwhite { background-position: -21px -65px; width: 19px; height: 18px; margin: 0 5px -2px 0;}
+.star-white { background-position: -0px -67px; width: 19px; height: 18px; margin: 0 5px -2px 0;}
+.info-ico { background-position: -19px -83px; width: 14px; height: 14px; margin-bottom: -2px;}
+.arrow-down { background-position: -40px -65px; width: 10px; height: 6px; }
+///SPRITE
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+        a {
+            color: $color-text;
+            &:hover {
+                text-decoration: none;
+                color: $blue;
+                transition: .8s;
+            }
+        }
+    }
+}
+
+@mixin forStretch {
+    width: 100%; 
+    text-align: justify;
+    &:after {
+        /*Для растяжения по длине*/
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+}

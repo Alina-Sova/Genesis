@@ -1,0 +1,55 @@
+@media(min-width: 1025px) {
+
+    main {
+        .form-search{
+            .search-item {
+                &:last-child {
+                    width: auto;
+                }
+            }
+        }
+
+        .list-result {
+            .errorfound {
+                font-size: 20px;
+            }
+            
+            .res-item {
+                width: 24%;
+
+                .result {
+                    
+                    .photo {
+                        cursor: pointer;
+                        overflow: hidden;
+                        border-radius: 10px 10px 0 0;
+
+                        img {
+                            transition: .5s ease;
+                        }
+
+                        &:hover img {
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer{
+        .menu-bottom {
+            .menu-item {
+                float: left;
+                margin-right: 30px; 
+            }
+            
+            @include clearfix;
+        }
+
+    }
+}
